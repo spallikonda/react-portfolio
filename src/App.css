@@ -1,4 +1,111 @@
-.App {
+body {
+  display:grid;
+  position: absolute;
+  place-items: center;
+  /* background-color: #e4f5ff; */
+  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+  background-color: #F7F6F3;
+}
+
+.container{
+  height:100%;
+  width:100%;
+  left:0px;
+  min-height:500px;
+  display: grid;
+  place-items: center;
+}
+
+.sidenav{
+  width:30px;
+  height:30px;
+  min-height:30px;
+  /* border: solid 1px rgba(0, 0, 0,0.2); */
+  background-color:rgba(241, 140, 7, 0.973);
+  z-index:100;
+  top:10px; 
+  left: 10px;
+  position: fixed;
+}
+
+.burger {
+ 
+  height:0px;
+  width:0px;
+  display:none;
+  padding:0px;
+  margin:0px;
+  list-style: none;
+  
+}
+
+.burger > li {
+  padding-top:10px;
+}
+
+.sidenav:hover{
+  top:10px;
+  min-width:150px;
+  width:15%;
+  height:100%;
+  /* min-height:500px; */
+  border-radius:0%;
+  transition: all 0.1s ease-in;
+}
+
+.sidenav:hover .burger{
+  display: inline-block;
+  list-style:none;
+  padding:5px;
+  margin:5px;
+  top:10px;
+  min-width:100px;
+  width:15%;
+  height:100%;
+  /* min-height:100px; */
+  transition: all 0.1s ease-in;
+}
+
+.sidenav a {
+  color: darkslategrey;
+  text-decoration: none; 
+}
+
+.About,
+.Experience,
+.Testimonials, 
+.Contact {
+  text-align: center;
+  min-height:300px;
+  height: 25%;
+  width:100%;
+  padding:20px;
+}
+
+.headers {
+  background-color:rgba(150, 199, 213,0.4);
+  color: #022534;
+  text-align: center;
+  padding: 5px 15px 5px 15px;
+  min-width:180px;
+}
+
+.contact_section {
+padding: 20px;
+margin-top: 20px;
+}
+
+.section1 {
+padding: 20px;
+margin-top: 20px;
+text-align: justify;
+}
+
+
+
+
+/* .App {
   text-align: center;
 }
 
@@ -36,3 +143,4 @@
     transform: rotate(360deg);
   }
 }
+ */
